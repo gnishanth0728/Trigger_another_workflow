@@ -1,0 +1,13 @@
+name: Label Trigger Workflow
+
+on:
+  issues:
+    types:
+      - labeled
+
+jobs:
+  triggered:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "Second workflow triggered successfully"
